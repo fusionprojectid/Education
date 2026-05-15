@@ -77,7 +77,7 @@ Contoh mentor yang tersedia:
 
 Data mentor dapat diedit langsung di file:
 
-javascript
+```javascript
 script.js
 
 🎯 Tujuan Website
