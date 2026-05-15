@@ -1,43 +1,56 @@
-body{
-
-font-family:Arial;
-
+/* Custom Variables & Colors */
+:root {
+    --loka-green-forest: #2F4F37;
+    --loka-orange-rust: #DE5131;
+    --loka-green-mint: #A7D9A0;
+    --loka-green-light: #DDF4DD;
+    --loka-orange-peach: #FFB74D;
+    --loka-yellow-sun: #FFD54F;
+    --loka-text: #2F4F37;
+    --loka-bg-warm: #FFFBF0;
+    --border-komik: #1C3222;
 }
 
-.hero{
-
-height:90vh;
-
-background:url("../images/hero.jpg") center/cover;
-
-display:flex;
-
-align-items:center;
-
+html {
+    scroll-behavior: smooth;
 }
 
-.hero h1{
-
-font-size:55px;
-
-font-weight:bold;
-
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--loka-bg-warm);
+    color: var(--loka-text);
 }
 
-.stats{
-
-background:#0d6efd;
-
-padding:70px 0;
-
+/* 3D Button Style (untuk tombol pendaftaran utama) */
+.btn-press {
+    position: relative;
+    transition: transform 0.1s, box-shadow 0.1s;
 }
 
-footer{
+.btn-press:active {
+    transform: translateY(4px);
+    box-shadow: none !important;
+}
 
-background:#222;
+.shadow-green-3d {
+    box-shadow: 0 5px 0 #1C3222;
+}
 
-color:white;
+.shadow-orange-3d {
+    box-shadow: 0 5px 0 #A83B22;
+}
 
-padding:20px;
+/* Modal Popup Body lock (Mencegah scroll saat popup terbuka) */
+body.modal-open {
+    overflow: hidden;
+}
 
+/* Animations (untuk Maskot) */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.float-anim {
+    animation: float 5s ease-in-out infinite;
 }
