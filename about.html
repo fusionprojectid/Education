@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami | LokaLensa Kids</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'],
+                        feather: ['"Feather Bold"', 'sans-serif'],
+                    },
+                    colors: {
+                        'loka-green-forest': '#2F4F37',
+                        'loka-orange-rust': '#DE5131',
+                        'loka-green-mint': '#A7D9A0',
+                        'loka-green-light': '#DDF4DD',
+                        'loka-orange-peach': '#FFB74D',
+                        'loka-yellow-sun': '#FFD54F',
+                        'loka-text': '#2F4F37',
+                        'loka-bg-warm': '#FFFBF0',
+                        'loka-border': '#1C3222',
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body class="font-sans text-loka-text bg-loka-bg-warm">
+    
+    <nav id="navbar" class="fixed top-0 w-full z-50 bg-white border-b-4 border-loka-orange-peach/30 py-2 shadow-md">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+                <i class="fa-solid fa-camera-retro text-2xl text-loka-orange-rust"></i>
+                <span class="text-xl font-feather lowercase tracking-tight text-loka-green-forest mt-1">LokaLensa <span class="text-loka-orange-rust">Kids</span></span>
+            </a>
+            <a href="index.html" class="bg-loka-green-light text-loka-green-forest px-5 py-2 rounded-xl font-black uppercase text-xs tracking-widest border-2 border-loka-green-mint hover:bg-loka-green-mint transition-colors">
+                Kembali
+            </a>
+        </div>
+    </nav>
+
+    
+    <main class="pt-32 pb-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl font-feather lowercase text-loka-green-forest mb-6">tentang lokalensa kids</h1>
+                <div class="h-2 w-20 bg-loka-yellow-sun mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="bg-white rounded-[2.5rem] border-4 border-loka-border p-10 shadow-lg space-y-8">
+                <div class="flex flex-col md:flex-row gap-10 items-center">
+                    <div class="flex-1">
+                        <h2 class="text-3xl font-feather lowercase text-loka-orange-rust mb-4">awal mula cerita</h2>
+                        <p class="font-bold text-gray-500 leading-relaxed mb-4">LokaLensa Kids lahir dari sebuah keresahan: anak-anak masa kini sangat akrab dengan gadget, tapi lebih banyak menjadi penonton daripada pencipta.</p>
+                        <p class="font-bold text-gray-500 leading-relaxed">Kami percaya bahwa setiap anak memiliki "lensa" unik dalam melihat dunia. Melalui medium fotografi, video, dan koding, kami ingin membantu mereka menangkap keindahan lokal Indonesia dan menceritakannya kepada dunia.</p>
+                    </div>
+                    <div class="w-full md:w-1/3 bg-loka-green-light rounded-3xl p-6 border-2 border-loka-green-mint transform -rotate-2">
+                         <i class="fa-solid fa-camera-retro text-7xl text-loka-green-forest opacity-30"></i>
+                         <p class="mt-4 font-black text-loka-green-forest lowercase italic">"menjadikan gadget sebagai alat berkarya, bukan sekadar hiburan."</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t-4 border-gray-50">
+                    <div class="p-6 bg-loka-bg-warm rounded-3xl border-2 border-loka-orange-peach">
+                        <h3 class="font-feather lowercase text-2xl text-loka-green-forest mb-3">misi kami</h3>
+                        <ul class="space-y-3 font-bold text-gray-500 text-sm">
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-loka-orange-rust mt-1"></i> Membangun literasi digital sejak dini.</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-loka-orange-rust mt-1"></i> Melatih rasa percaya diri melalui karya nyata.</li>
+                            <li class="flex gap-2"><i class="fa-solid fa-check text-loka-orange-rust mt-1"></i> Menciptakan komunitas kreatif untuk anak-anak Nusantara.</li>
+                        </ul>
+                    </div>
+                    <div class="p-6 bg-loka-bg-warm rounded-3xl border-2 border-loka-green-mint">
+                        <h3 class="font-feather lowercase text-2xl text-loka-green-forest mb-3">metode kami</h3>
+                        <p class="font-bold text-gray-500 text-sm leading-relaxed">Kami menggabungkan storytelling bergaya komik interaktif dengan misi praktik langsung. Tidak ada teori membosankan, yang ada hanya petualangan seru untuk diselesaikan!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

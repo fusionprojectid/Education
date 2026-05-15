@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syarat & Ketentuan | LokaLensa Kids</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'],
+                        feather: ['"Feather Bold"', 'sans-serif'],
+                    },
+                    colors: {
+                        'loka-green-forest': '#2F4F37',
+                        'loka-orange-rust': '#DE5131',
+                        'loka-green-mint': '#A7D9A0',
+                        'loka-green-light': '#DDF4DD',
+                        'loka-orange-peach': '#FFB74D',
+                        'loka-yellow-sun': '#FFD54F',
+                        'loka-text': '#2F4F37',
+                        'loka-bg-warm': '#FFFBF0',
+                        'loka-border': '#1C3222',
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body class="font-sans text-loka-text bg-loka-bg-warm">
+    
+    <nav id="navbar" class="fixed top-0 w-full z-50 bg-white border-b-4 border-loka-orange-peach/30 py-2 shadow-md">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 cursor-pointer">
+                <i class="fa-solid fa-camera-retro text-2xl text-loka-orange-rust"></i>
+                <span class="text-xl font-feather lowercase tracking-tight text-loka-green-forest mt-1">LokaLensa <span class="text-loka-orange-rust">Kids</span></span>
+            </a>
+            <a href="index.html" class="bg-loka-green-light text-loka-green-forest px-5 py-2 rounded-xl font-black uppercase text-xs tracking-widest border-2 border-loka-green-mint hover:bg-loka-green-mint transition-colors">
+                Kembali
+            </a>
+        </div>
+    </nav>
+
+    
+    <main class="pt-32 pb-24 px-6">
+        <div class="max-w-3xl mx-auto bg-white rounded-[2.5rem] border-4 border-loka-border p-8 md:p-12 shadow-lg">
+            <h1 class="text-4xl font-feather lowercase text-loka-green-forest mb-8">syarat & ketentuan</h1>
+            
+            <div class="prose font-bold text-gray-500 space-y-6 text-sm leading-relaxed">
+                <section>
+                    <h3 class="font-black text-loka-green-forest text-lg uppercase mb-2">1. Layanan Kami</h3>
+                    <p>LokaLensa Kids menyediakan kursus digital untuk anak-anak. Semua materi adalah hak cipta intelektual LokaLensa Kids dan tidak boleh disebarluaskan tanpa izin.</p>
+                </section>
+
+                <section>
+                    <h3 class="font-black text-loka-green-forest text-lg uppercase mb-2">2. Pendaftaran & Akun</h3>
+                    <p>Orang tua wajib mendampingi anak dalam proses pendaftaran dan penggunaan platform ini. Satu akun berlaku untuk satu anak pengguna.</p>
+                </section>
+
+                <section>
+                    <h3 class="font-black text-loka-green-forest text-lg uppercase mb-2">3. Pembatalan & Refund</h3>
+                    <p>Biaya langganan yang sudah dibayarkan tidak dapat dikembalikan, namun paket langganan dapat dihentikan kapan saja untuk bulan berikutnya.</p>
+                </section>
+                
+                <p class="pt-6 border-t-2 border-gray-100 text-xs text-gray-400 italic text-center">Pembaruan Terakhir: 15 Mei 2026</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
