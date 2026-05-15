@@ -45,7 +45,7 @@ body.modal-open {
     overflow: hidden;
 }
 
-/* Animations (untuk Maskot) */
+/* Animations */
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
@@ -53,4 +53,51 @@ body.modal-open {
 
 .float-anim {
     animation: float 5s ease-in-out infinite;
+}
+
+.site-toast {
+    position: fixed;
+    left: 50%;
+    bottom: 1.5rem;
+    z-index: 200;
+    max-width: min(90vw, 28rem);
+    padding: 0.85rem 1.15rem;
+    border: 3px solid var(--border-komik);
+    border-radius: 1rem;
+    background: #fff;
+    color: var(--loka-green-forest);
+    box-shadow: 5px 5px 0 var(--border-komik);
+    font-weight: 900;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 1rem);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.site-toast.show {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+[role="button"]:focus-visible,
+button:focus-visible,
+a:focus-visible {
+    outline: 4px solid var(--loka-yellow-sun);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.001ms !important;
+    }
 }

@@ -33,26 +33,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="font-sans text-loka-text bg-loka-bg-warm relative">
 
     <nav id="navbar" class="fixed top-0 w-full z-50 bg-white border-b-4 border-loka-orange-peach/30 transition-all py-0">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3 cursor-pointer">
+            <div class="flex items-center gap-3 cursor-pointer" data-scroll-target="body">
                 <i class="fa-solid fa-camera-retro text-3xl text-loka-orange-rust"></i>
                 <span class="text-2xl font-black tracking-tight text-loka-green-forest uppercase">LokaLensa <span class="text-loka-orange-rust">Kids</span></span>
             </div>
             
-            <div class="hidden md:flex items-center gap-10 font-black uppercase text-xs tracking-[0.15em] opacity-80 text-loka-green-forest">
+            <div class="hidden md:flex items-center gap-8 font-black uppercase text-xs tracking-[0.15em] opacity-80 text-loka-green-forest">
                 <a href="#materi" class="hover:text-loka-orange-rust transition-colors">Materi</a>
-                <a href="#mentor" class="hover:text-loka-orange-rust transition-colors">Mentor</a>
-                <a href="#kontak" class="hover:text-loka-orange-rust transition-colors">Kontak</a>
+                <a href="#galeri" class="hover:text-loka-orange-rust transition-colors">Galeri</a>
+                <a href="#testimoni" class="hover:text-loka-orange-rust transition-colors">Testimoni</a>
+                <a href="#faq" class="hover:text-loka-orange-rust transition-colors">FAQ</a>
             </div>
 
             <div class="flex items-center gap-4">
-                <button class="hidden sm:block font-black uppercase text-xs tracking-widest text-loka-orange-rust hover:opacity-70">Masuk</button>
-                <button class="bg-loka-orange-rust text-white px-6 py-3 rounded-2xl font-black uppercase text-xs tracking-widest shadow-orange-3d btn-press">Daftar</button>
+                <button type="button" class="hidden sm:block font-black uppercase text-xs tracking-widest text-loka-orange-rust hover:opacity-70" data-toast="Fitur masuk segera hadir.">Masuk</button>
+                <button type="button" class="bg-loka-orange-rust text-white px-6 py-3 rounded-2xl font-black uppercase text-xs tracking-widest shadow-orange-3d btn-press" data-scroll-target="#kontak">Daftar</button>
             </div>
         </div>
     </nav>
@@ -68,7 +69,7 @@
                     Petualangan kreatif digital untuk anak sekolah. Jelajahi serunya Foto, Video, dan Koding dengan misi bergaya komik yang seru habis.
                 </p>
                 <div class="flex justify-center md:justify-start">
-                    <button class="bg-loka-orange-rust text-white px-12 md:px-16 py-5 rounded-2xl font-black uppercase tracking-widest shadow-orange-3d btn-press text-base md:text-lg hover:opacity-90 transition-opacity">
+                    <button type="button" class="bg-loka-orange-rust text-white px-12 md:px-16 py-5 rounded-2xl font-black uppercase tracking-widest shadow-orange-3d btn-press text-base md:text-lg hover:opacity-90 transition-opacity" data-scroll-target="#kontak">
                         IKUT KELAS SERU
                     </button>
                 </div>
@@ -105,9 +106,7 @@
                         <i class="fa-solid fa-camera text-loka-green-forest text-3xl"></i>
                     </div>
                     <h3 class="font-black text-2xl text-loka-green-forest mb-4">Foto & Videografi</h3>
-                    <p class="font-bold text-gray-500 leading-relaxed flex-grow">
-                        Jepret momen seru dan rekam cerita keren di sekitarmu dengan teknik pencahayaan dan komposisi ala profesional.
-                    </p>
+                    <p class="font-bold text-gray-500 leading-relaxed flex-grow">Jepret momen seru dan rekam cerita keren di sekitarmu dengan teknik pencahayaan dan komposisi ala profesional.</p>
                 </div>
 
                 <div class="group h-full bg-white rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 border-b-4 border-b-loka-orange-peach flex flex-col items-center text-center p-8 md:p-10 cursor-pointer transform transition-all duration-300 hover:-translate-y-4 hover:scale-105 hover:shadow-[0_20px_50px_rgba(222,81,49,0.12)]">
@@ -115,9 +114,7 @@
                         <i class="fa-solid fa-film text-loka-orange-rust text-3xl"></i>
                     </div>
                     <h3 class="font-black text-2xl text-loka-orange-rust mb-4">Editing Video</h3>
-                    <p class="font-bold text-gray-500 leading-relaxed flex-grow">
-                        Ubah hasil rekamanmu jadi konten bintang lima dengan menambahkan efek visual, transisi, dan musik yang asyik.
-                    </p>
+                    <p class="font-bold text-gray-500 leading-relaxed flex-grow">Ubah hasil rekamanmu jadi konten bintang lima dengan menambahkan efek visual, transisi, dan musik yang asyik.</p>
                 </div>
 
                 <div class="group h-full bg-white rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 border-b-4 border-b-loka-yellow-sun flex flex-col items-center text-center p-8 md:p-10 cursor-pointer transform transition-all duration-300 hover:-translate-y-4 hover:scale-105 hover:shadow-[0_20px_50px_rgba(255,213,79,0.2)]">
@@ -125,64 +122,216 @@
                         <i class="fa-solid fa-laptop-code text-loka-green-forest text-3xl"></i>
                     </div>
                     <h3 class="font-black text-2xl text-loka-green-forest mb-4">Coding for Kids</h3>
-                    <p class="font-bold text-gray-500 leading-relaxed flex-grow">
-                        Bikin game dan aplikasi pertamamu sendiri. Susun blok pemrogramannya, dan lihat kode buatanmu hidup!
-                    </p>
+                    <p class="font-bold text-gray-500 leading-relaxed flex-grow">Bikin game dan aplikasi pertamamu sendiri. Susun blok pemrogramannya, dan lihat kode buatanmu hidup!</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="mentor" class="py-24 px-6 bg-loka-bg-warm border-t-4 border-loka-orange-peach/10">
+    <section id="langkah" class="py-24 px-6 bg-loka-bg-warm border-t-4 border-loka-orange-peach/10">
         <div class="max-w-6xl mx-auto">
-            
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-5xl font-black mb-4 text-loka-green-forest">Gimana Cara Belajarnya?</h2>
+                <div class="h-2 w-20 bg-loka-green-mint mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center relative">
+                <div class="hidden md:block absolute top-12 left-1/6 right-1/6 h-2 bg-loka-orange-peach/20 z-0"></div>
+
+                <div class="relative z-10 flex flex-col items-center">
+                    <div class="w-24 h-24 bg-white rounded-full shadow-lg border-4 border-loka-yellow-sun flex items-center justify-center mb-6">
+                        <span class="text-3xl font-black text-loka-orange-rust">1</span>
+                    </div>
+                    <h3 class="font-black text-2xl text-loka-green-forest mb-3">Pilih Misi</h3>
+                    <p class="font-bold text-gray-500">Tonton cerita komik interaktif dan pilih tantangan kreatif yang paling kamu suka.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center">
+                    <div class="w-24 h-24 bg-white rounded-full shadow-lg border-4 border-loka-green-mint flex items-center justify-center mb-6">
+                        <span class="text-3xl font-black text-loka-orange-rust">2</span>
+                    </div>
+                    <h3 class="font-black text-2xl text-loka-green-forest mb-3">Praktik Seru</h3>
+                    <p class="font-bold text-gray-500">Mulai jepret foto, edit video, atau susun blok kodingmu didampingi arahan mentor.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center">
+                    <div class="w-24 h-24 bg-white rounded-full shadow-lg border-4 border-loka-orange-peach flex items-center justify-center mb-6">
+                        <span class="text-3xl font-black text-loka-orange-rust">3</span>
+                    </div>
+                    <h3 class="font-black text-2xl text-loka-green-forest mb-3">Dapat Reward!</h3>
+                    <p class="font-bold text-gray-500">Kumpulkan poin, buka *badge* rahasia, dan pamerkan karyamu ke teman-teman.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="py-24 px-6 bg-loka-green-forest text-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-black mb-4 text-white">Karya Kreator Cilik</h2>
+                    <div class="h-2 w-20 bg-loka-yellow-sun rounded-full"></div>
+                </div>
+                <p class="mt-6 md:mt-0 font-bold text-loka-green-light max-w-md md:text-right">Ini bukti kerennya hasil belajar teman-teman di LokaLensa Kids. Kamu juga bisa bikin yang lebih epik!</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <div class="col-span-2 md:col-span-2 row-span-2 rounded-3xl overflow-hidden relative group">
+                    <img src="assets/product1.jpg" alt="Hasil Foto Anak" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                        <span class="bg-loka-yellow-sun text-loka-green-forest text-xs font-black uppercase px-3 py-1 rounded-full">Fotografi</span>
+                        <h4 class="font-bold mt-2">"Senja di Desaku" - Arya (10 th)</h4>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden relative group aspect-square">
+                    <img src="assets/product2.jpg" alt="Game Koding" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                        <span class="bg-loka-green-mint text-loka-green-forest text-xs font-black uppercase px-3 py-1 rounded-full">Koding</span>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden relative group aspect-square">
+                    <img src="assets/product3.jpg" alt="Editing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+                        <span class="bg-loka-orange-peach text-white text-xs font-black uppercase px-3 py-1 rounded-full">Editing</span>
+                    </div>
+                </div>
+                <div class="col-span-2 rounded-3xl overflow-hidden relative group h-48 md:h-auto">
+                    <img src="assets/hero.jpg" alt="Kelas Bersama" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-colors duration-300">
+                        <i class="fa-solid fa-circle-play text-white text-5xl opacity-80"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mentor" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-black mb-4 text-loka-green-forest">Mentor Berpengalaman</h2>
                 <div class="h-2 w-20 bg-loka-orange-peach mx-auto rounded-full"></div>
-                <p class="mt-6 text-lg font-bold text-gray-500 max-w-2xl mx-auto">Kenalan yuk sama kakak-kakak mentor seru yang siap membimbing petualangan digitalmu!</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10">
-                
-                <div class="group flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-4 hover:scale-105 cursor-pointer" onclick="bukaModal(1)">
+                <div class="group flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-4 hover:scale-105 cursor-pointer" role="button" tabindex="0" data-mentor-id="1">
                     <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&fit=crop" alt="Kak Budi" class="w-40 h-40 rounded-full object-cover mb-6 border-4 border-loka-green-light shadow-md transition-transform duration-300 group-hover:scale-110 group-hover:border-loka-green-mint flex-shrink-0">
                     <h3 class="font-black text-3xl text-loka-green-forest mb-2">Kak Budi</h3>
                     <p class="font-black text-loka-orange-rust text-sm uppercase tracking-wider mb-6 flex-grow">Master Fotografi</p>
-                    <button class="bg-loka-green-light text-loka-green-forest border-2 border-loka-green-mint px-8 py-2.5 rounded-xl font-black uppercase text-xs tracking-widest group-hover:bg-loka-green-mint transition-colors shadow-sm">Detail Mentor</button>
+                    <button class="bg-loka-green-light text-loka-green-forest border-2 border-loka-green-mint px-8 py-2.5 rounded-xl font-black uppercase text-xs tracking-widest group-hover:bg-loka-green-mint transition-colors shadow-sm pointer-events-none">Detail Mentor</button>
                 </div>
 
-                <div class="group flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-4 hover:scale-105 cursor-pointer" onclick="bukaModal(2)">
+                <div class="group flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-4 hover:scale-105 cursor-pointer" role="button" tabindex="0" data-mentor-id="2">
                     <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Kak Dina" class="w-40 h-40 rounded-full object-cover mb-6 border-4 border-loka-orange-peach/30 shadow-md transition-transform duration-300 group-hover:scale-110 group-hover:border-loka-orange-peach flex-shrink-0">
                     <h3 class="font-black text-3xl text-loka-green-forest mb-2">Kak Dina</h3>
                     <p class="font-black text-loka-orange-rust text-sm uppercase tracking-wider mb-6 flex-grow">Suhu Editing Keren</p>
-                    <button class="bg-loka-orange-peach/20 text-loka-orange-rust border-2 border-loka-orange-peach px-8 py-2.5 rounded-xl font-black uppercase text-xs tracking-widest group-hover:bg-loka-orange-peach group-hover:text-white transition-colors shadow-sm">Detail Mentor</button>
+                    <button class="bg-loka-orange-peach/20 text-loka-orange-rust border-2 border-loka-orange-peach px-8 py-2.5 rounded-xl font-black uppercase text-xs tracking-widest group-hover:bg-loka-orange-peach group-hover:text-white transition-colors shadow-sm pointer-events-none">Detail Mentor</button>
                 </div>
 
-                <div class="group flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-4 hover:scale-105 cursor-pointer" onclick="bukaModal(3)">
+                <div class="group flex flex-col items-center text-center transform transition-all duration-300 hover:-translate-y-4 hover:scale-105 cursor-pointer" role="button" tabindex="0" data-mentor-id="3">
                     <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=200&h=200&fit=crop" alt="Kak Rio" class="w-40 h-40 rounded-full object-cover mb-6 border-4 border-loka-yellow-sun/30 shadow-md transition-transform duration-300 group-hover:scale-110 group-hover:border-loka-yellow-sun flex-shrink-0">
                     <h3 class="font-black text-3xl text-loka-green-forest mb-2">Kak Rio</h3>
                     <p class="font-black text-loka-orange-rust text-sm uppercase tracking-wider mb-6 flex-grow">Pawang Koding Game</p>
-                    <button class="bg-loka-yellow-sun/20 text-loka-green-forest border-2 border-loka-yellow-sun px-8 py-2.5 rounded-xl font-black uppercase text-xs tracking-widest group-hover:bg-loka-yellow-sun transition-colors shadow-sm">Detail Mentor</button>
+                    <button class="bg-loka-yellow-sun/20 text-loka-green-forest border-2 border-loka-yellow-sun px-8 py-2.5 rounded-xl font-black uppercase text-xs tracking-widest group-hover:bg-loka-yellow-sun transition-colors shadow-sm pointer-events-none">Detail Mentor</button>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section class="relative w-full flex flex-col items-center bg-loka-bg-warm pt-16 border-t-4 border-loka-green-mint/30">
-        <div class="relative z-10 mb-[-40px]">
-            <svg viewBox="0 0 200 200" class="w-48 h-48 drop-shadow-xl overflow-visible float-anim">
-                <rect x="25" y="65" width="150" height="110" rx="30" fill="#A7D9A0" stroke="#1C3222" stroke-width="6"/>
-                <rect x="50" y="45" width="45" height="30" rx="10" fill="#FFB74D" stroke="#1C3222" stroke-width="6"/>
-                <circle cx="100" cy="120" r="42" fill="#FFFFFF" stroke="#1C3222" stroke-width="6"/>
-                <circle cx="100" cy="120" r="24" fill="#1C3222" />
-                <path d="M 45 95 Q 55 80 65 95" stroke="#1C3222" stroke-width="6" fill="none" stroke-linecap="round"/>
-                <path d="M 135 95 Q 145 80 155 95" stroke="#1C3222" stroke-width="6" fill="none" stroke-linecap="round"/>
-            </svg>
+    <section id="testimoni" class="py-24 px-6 bg-loka-bg-warm border-y-4 border-loka-orange-peach/20">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black mb-4 text-loka-green-forest">Kata Orang Tua</h2>
+                <div class="h-2 w-20 bg-loka-orange-peach mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col">
+                    <div class="flex text-loka-yellow-sun mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="font-bold text-gray-500 italic flex-grow mb-6">"Anak saya tadinya cuma suka main HP, sekarang malah sibuk ngedit video tugas sekolahnya sendiri. Metode komiknya bikin dia nggak gampang bosan!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-loka-green-light rounded-full flex items-center justify-center font-black text-loka-green-forest text-xl border-2 border-loka-green-mint">M</div>
+                        <div>
+                            <h4 class="font-black text-loka-green-forest">Mama Nisa</h4>
+                            <p class="text-xs font-bold text-gray-400">Orang tua dari Dito (9 th)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col transform md:-translate-y-4">
+                    <div class="flex text-loka-yellow-sun mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="font-bold text-gray-500 italic flex-grow mb-6">"Luar biasa! Baru 1 bulan ikut kelas koding, anak saya sudah bisa pamer bikin game sederhana ke kakeknya. Mentornya super sabar."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-loka-orange-peach/30 rounded-full flex items-center justify-center font-black text-loka-orange-rust text-xl border-2 border-loka-orange-peach">P</div>
+                        <div>
+                            <h4 class="font-black text-loka-green-forest">Papa Reno</h4>
+                            <p class="text-xs font-bold text-gray-400">Orang tua dari Caca (11 th)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col">
+                    <div class="flex text-loka-yellow-sun mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="font-bold text-gray-500 italic flex-grow mb-6">"Saya suka ada report perkembangannya. Jadi ketahuan passion anak saya ternyata kuat banget di visual dan fotografi. Worth it banget!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-loka-yellow-sun/30 rounded-full flex items-center justify-center font-black text-loka-green-forest text-xl border-2 border-loka-yellow-sun">B</div>
+                        <div>
+                            <h4 class="font-black text-loka-green-forest">Bunda Sari</h4>
+                            <p class="text-xs font-bold text-gray-400">Orang tua dari Kevin (10 th)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <div class="w-full relative z-0 -mb-1">
+    <section id="faq" class="py-24 px-6 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black mb-4 text-loka-green-forest">Paling Sering Ditanyakan</h2>
+                <div class="h-2 w-20 bg-loka-green-mint mx-auto rounded-full"></div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="border-2 border-gray-100 rounded-2xl overflow-hidden">
+                    <button type="button" data-faq-target="faq1" aria-expanded="false" aria-controls="faq1" class="w-full px-6 py-5 flex justify-between items-center bg-white hover:bg-loka-bg-warm transition-colors focus:outline-none">
+                        <span class="font-black text-loka-green-forest text-left">Apakah harus punya kamera mahal?</span>
+                        <i class="fa-solid fa-plus text-loka-orange-rust transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq1" class="hidden px-6 pb-5 pt-2 text-gray-500 font-bold border-t border-gray-100" aria-hidden="true">
+                        Sama sekali tidak! Semua materi fotografi dan videografi di LokaLensa Kids didesain agar bisa dipraktikkan menggunakan kamera smartphone (HP) standar yang ada di rumah.
+                    </div>
+                </div>
+                
+                <div class="border-2 border-gray-100 rounded-2xl overflow-hidden">
+                    <button type="button" data-faq-target="faq2" aria-expanded="false" aria-controls="faq2" class="w-full px-6 py-5 flex justify-between items-center bg-white hover:bg-loka-bg-warm transition-colors focus:outline-none">
+                        <span class="font-black text-loka-green-forest text-left">Kelas ini cocok untuk usia berapa?</span>
+                        <i class="fa-solid fa-plus text-loka-orange-rust transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq2" class="hidden px-6 pb-5 pt-2 text-gray-500 font-bold border-t border-gray-100" aria-hidden="true">
+                        Metode komik interaktif kami paling pas untuk anak sekolah dasar hingga menengah (usia 8 - 14 tahun). Namun, siapapun yang ingin belajar dasar kreatif dari nol sangat diterima!
+                    </div>
+                </div>
+
+                <div class="border-2 border-gray-100 rounded-2xl overflow-hidden">
+                    <button type="button" data-faq-target="faq3" aria-expanded="false" aria-controls="faq3" class="w-full px-6 py-5 flex justify-between items-center bg-white hover:bg-loka-bg-warm transition-colors focus:outline-none">
+                        <span class="font-black text-loka-green-forest text-left">Aplikasi editing apa yang dipakai?</span>
+                        <i class="fa-solid fa-plus text-loka-orange-rust transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq3" class="hidden px-6 pb-5 pt-2 text-gray-500 font-bold border-t border-gray-100" aria-hidden="true">
+                        Kami menggunakan aplikasi gratis dan ramah anak seperti CapCut untuk editing video, dan platform block-coding visual standar pendidikan untuk kelas koding game.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full relative z-0 -mb-1 mt-12 border-t-4 border-loka-green-mint/30">
         <svg viewBox="0 0 1440 120" class="w-full h-16 md:h-24 block" preserveAspectRatio="none">
             <path fill="#2F4F37" d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z"></path>
         </svg>
@@ -198,30 +347,30 @@
                 <div>
                     <h4 class="font-black text-lg mb-6 text-loka-orange-peach">Materi Keren</h4>
                     <ul class="space-y-4 font-bold text-sm text-white/80">
-                        <li><a href="#" class="hover:text-loka-yellow-sun transition-colors">Foto & Videografi</a></li>
-                        <li><a href="#" class="hover:text-loka-yellow-sun transition-colors">Editing Video</a></li>
-                        <li><a href="#" class="hover:text-loka-yellow-sun transition-colors">Coding Game</a></li>
+                        <li><a href="#materi" class="hover:text-loka-yellow-sun transition-colors">Foto & Videografi</a></li>
+                        <li><a href="#materi" class="hover:text-loka-yellow-sun transition-colors">Editing Video</a></li>
+                        <li><a href="#materi" class="hover:text-loka-yellow-sun transition-colors">Coding Game</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-black text-lg mb-6 text-loka-orange-peach">Sekolah</h4>
                     <ul class="space-y-4 font-bold text-sm text-white/80">
-                        <li><a href="#" class="hover:text-loka-yellow-sun transition-colors">Kurikulum Fun</a></li>
-                        <li><a href="#" class="hover:text-loka-yellow-sun transition-colors">Akses Guru</a></li>
+                        <li><a href="#langkah" class="hover:text-loka-yellow-sun transition-colors">Kurikulum Fun</a></li>
+                        <li><a href="#kontak" class="hover:text-loka-yellow-sun transition-colors">Akses Guru</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-black text-lg mb-6 text-loka-orange-peach">Tentang Kita</h4>
                     <ul class="space-y-4 font-bold text-sm text-white/80">
-                        <li><a href="#" class="hover:text-loka-yellow-sun transition-colors">Mentor Kreatif</a></li>
-                        <li><a href="#" class="hover:text-loka-yellow-sun transition-colors">Hubungi Kami</a></li>
+                        <li><a href="#mentor" class="hover:text-loka-yellow-sun transition-colors">Mentor Kreatif</a></li>
+                        <li><a href="#kontak" class="hover:text-loka-yellow-sun transition-colors">Hubungi Kami</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-black text-lg mb-6 text-loka-orange-peach">Bantuan</h4>
                     <ul class="space-y-4 font-bold text-sm text-white/80">
-                        <li><a href="#" class="hover:text-loka-yellow-sun transition-colors">Tanya Jawab</a></li>
-                        <li><a href="#" class="hover:text-loka-yellow-sun transition-colors">Privasi</a></li>
+                        <li><a href="#faq" class="hover:text-loka-yellow-sun transition-colors">Tanya Jawab</a></li>
+                        <li><a href="#kontak" class="hover:text-loka-yellow-sun transition-colors">Privasi</a></li>
                     </ul>
                 </div>
             </div>
@@ -232,31 +381,26 @@
                     <span>Bahasa Indonesia</span>
                 </div>
                 <div class="flex gap-8 text-xl">
-                    <a href="#" class="hover:text-loka-orange-peach transition-colors"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="hover:text-loka-orange-peach transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#" class="hover:text-loka-orange-peach transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#kontak" class="hover:text-loka-orange-peach transition-colors" aria-label="Instagram LokaLensa Kids" data-toast="Tautan Instagram belum diatur."><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#kontak" class="hover:text-loka-orange-peach transition-colors" aria-label="WhatsApp LokaLensa Kids" data-toast="Tautan WhatsApp belum diatur."><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#kontak" class="hover:text-loka-orange-peach transition-colors" aria-label="YouTube LokaLensa Kids" data-toast="Tautan YouTube belum diatur."><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <div id="mentorModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
-        <div class="absolute inset-0 bg-loka-border/40 backdrop-blur-sm transition-opacity opacity-0" id="modalOverlay" onclick="tutupModal()"></div>
+    <div id="mentorModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="absolute inset-0 bg-loka-border/40 backdrop-blur-sm transition-opacity opacity-0 cursor-pointer" id="modalOverlay" onclick="tutupModal()"></div>
         
         <div class="relative bg-white w-full max-w-md rounded-[2.5rem] p-8 md:p-10 border-4 border-loka-border shadow-[8px_8px_0_#1C3222] transform transition-all scale-95 opacity-0 z-10" id="modalContentBox">
-            
-            <button onclick="tutupModal()" class="absolute top-4 right-4 w-10 h-10 bg-loka-bg-warm rounded-full flex items-center justify-center border-2 border-loka-border text-loka-text hover:bg-loka-orange-rust hover:text-white transition-colors cursor-pointer">
+            <button type="button" onclick="tutupModal()" aria-label="Tutup detail mentor" class="absolute top-4 right-4 w-10 h-10 bg-loka-bg-warm rounded-full flex items-center justify-center border-2 border-loka-border text-loka-text hover:bg-loka-orange-rust hover:text-white transition-colors cursor-pointer">
                 <i class="fa-solid fa-xmark text-lg"></i>
             </button>
-            
             <div class="flex flex-col items-center text-center mt-2">
                 <img id="modalImg" src="" alt="Foto Mentor" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mb-6 border-4 border-loka-yellow-sun shadow-md">
-                
                 <h3 id="modalName" class="font-black text-3xl text-loka-green-forest mb-2">Nama</h3>
                 <p id="modalRole" class="font-black text-loka-orange-rust bg-loka-orange-peach/20 px-5 py-1.5 rounded-full uppercase tracking-wider text-xs md:text-sm mb-6 border border-loka-orange-peach/40">Jabatan</p>
-                
                 <p id="modalDesc" class="font-bold text-gray-500 leading-relaxed text-sm md:text-base">Deskripsi mentor akan muncul di sini.</p>
-                
                 <div class="mt-8 flex gap-2 justify-center">
                     <i class="fa-solid fa-star text-loka-yellow-sun text-sm"></i>
                     <i class="fa-solid fa-star text-loka-yellow-sun text-lg"></i>
@@ -266,6 +410,8 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <div id="siteToast" class="site-toast" role="status" aria-live="polite" aria-hidden="true"></div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
