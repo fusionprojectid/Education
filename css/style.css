@@ -1,3 +1,12 @@
+/* Registrasi Font Kustom (Pastikan file feather-bold.ttf ada di folder fonts) */
+@font-face {
+    font-family: 'Feather Bold';
+    src: url('../fonts/feather-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Custom Variables & Colors */
 :root {
     --loka-green-forest: #2F4F37;
@@ -13,6 +22,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem; 
 }
 
 body {
@@ -21,7 +31,7 @@ body {
     color: var(--loka-text);
 }
 
-/* 3D Button Style (untuk tombol pendaftaran utama) */
+/* 3D Button Style */
 .btn-press {
     position: relative;
     transition: transform 0.1s, box-shadow 0.1s;
@@ -40,12 +50,12 @@ body {
     box-shadow: 0 5px 0 #A83B22;
 }
 
-/* Modal Popup Body lock (Mencegah scroll saat popup terbuka) */
+/* Modal Popup Body lock */
 body.modal-open {
     overflow: hidden;
 }
 
-/* Animations */
+/* Animations for Mascot */
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
@@ -53,6 +63,32 @@ body.modal-open {
 
 .float-anim {
     animation: float 5s ease-in-out infinite;
+}
+
+/* ANIMASI TESTIMONI MARQUEE */
+.marquee-track {
+    animation: scroll 40s linear infinite;
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Dropdown Language Styling */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+select::-ms-expand {
+    display: none;
 }
 
 .site-toast {
@@ -82,7 +118,8 @@ body.modal-open {
 
 [role="button"]:focus-visible,
 button:focus-visible,
-a:focus-visible {
+a:focus-visible,
+select:focus-visible {
     outline: 4px solid var(--loka-yellow-sun);
     outline-offset: 4px;
 }
