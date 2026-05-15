@@ -53,6 +53,8 @@ Website ini dibangun menggunakan teknologi berikut:
 ---
 
 # 📂 Struktur Folder
+
+
 lokalensa-kids/
 │
 ├── index.html # Halaman utama landing page
@@ -76,11 +78,11 @@ Contoh mentor yang tersedia:
 | Kak Rio | Coding Game |
 
 Data mentor dapat diedit langsung di file:
-
-```javascript
 script.js
 
-🎯 Tujuan Website
+---
+
+# 🎯 Tujuan Website
 
 Tujuan utama LokaLensa Kids adalah:
 
@@ -88,7 +90,9 @@ Mengajarkan kreativitas digital sejak dini
 Membantu anak belajar teknologi secara menyenangkan
 Menjadi platform edukasi digital berbasis kreativitas
 
-🚀 Cara Menjalankan Website
+---
+
+# 🚀 Cara Menjalankan Website
 Download atau clone repository.
 Pastikan file berikut berada dalam satu folder:
 index.html
@@ -99,7 +103,9 @@ index.html
 
 di browser.
 
-🔧 Pengembangan Selanjutnya
+---
+
+# 🔧 Pengembangan Selanjutnya
 
 Beberapa fitur yang bisa ditambahkan:
 
@@ -108,8 +114,9 @@ Progress belajar seperti Duolingo
 Mini game edukasi
 Dashboard orang tua
 Sistem kursus online
-📬 Kontak
 
+---
+
+# 📬 Kontak
 Jika ingin bekerja sama atau mengembangkan platform ini:
-
 Email: lokalakutrip@gmail.com
